@@ -28,7 +28,7 @@ struct LinkList<T> {
             }
             temp?.next = node;
         }
-        length = length + 1;
+        length += 1;
     }
     
     func printList() {
@@ -74,13 +74,19 @@ struct LinkList<T> {
             head = head?.next
         } else {
             // navigate to position and delete it
+            var index:Int = 0;
+            var temp:Node? = head;
             
-            
-            
+            while(index < position-1) {
+                temp = temp?.next;
+                index += 1
+            }
+            temp?.next = temp?.next?.next;
         }
-        
+        length -= 1;
     }
     
+    // 
     
     
 }

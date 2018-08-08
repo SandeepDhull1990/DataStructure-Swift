@@ -11,15 +11,19 @@ import Foundation
 
 var list:LinkList<String> = LinkList();
 
+print(" \n \n")
+
 list.append(data: "Sandeep");
 list.append(data: "Dhull");
-list.append(data: "is A good boy");
+list.append(data: "is a Mobile application developer");
 list.append(data: "He works in sigma");
-list.append(data: "ITC");
-list.append(data: "India");
+list.append(data: "ITC,");
+list.append(data: "India.");
+list.append(data: "He likes working on Android");
+list.append(data: "and consider iOS to be easy");
 
 list.printList()
-print("Lenght is  \(list.length)");
+print("Length is  \(list.length)");
 
 list.reverse();
 
@@ -27,7 +31,15 @@ print("\n \n after Reversing \n \n")
 
 list.printList()
 
-print("Lenght is  \(list.length)");
+print("Length is  \(list.length)");
+
+list.reverse();
 
 
-list.remove(position: 6)
+// Find something in list
+
+
+list.remove(position: 3)
+print("\n \n After removing Length is  \(list.length) \n \n");
+list.printList()
+
