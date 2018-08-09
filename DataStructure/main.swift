@@ -43,3 +43,53 @@ list.remove(position: 3)
 print("\n \n After removing Length is  \(list.length) \n \n");
 list.printList()
 
+
+print(" \n ********************  Queue   ****************** \n")
+
+var queue : QueueLinkedList<String> = QueueLinkedList()
+
+queue.enqueue(data: "Sandeep")
+
+queue.enqueue(data: "Dhull")
+
+queue.enqueue(data: "is")
+
+queue.enqueue(data: "good")
+
+queue.enqueue(data: "developer")
+
+queue.enqueue(data: "working")
+
+queue.enqueue(data: "at")
+
+queue.enqueue(data: "Sigma")
+
+queue.printQueue()
+
+print("Size is \(queue.length())");
+
+print("Dequeued element is \(queue.dequeue()!)");
+print("Dequeued element is \(queue.dequeue()!)");
+
+print("\n After dequeuing ************ \n")
+
+queue.printQueue()
+
+print("Size is \(queue.length())");
+
+
+print(" \n ********************  Stack   ****************** \n")
+
+var stack : Stack<String> = Stack()
+
+stack.push(data: "Sandeep 1")
+stack.push(data: "Dhull")
+stack.push(data: "is")
+stack.push(data: "good")
+stack.push(data: "developer")
+stack.push(data: "working")
+stack.push(data: "at")
+stack.push(data: "Sigma End")
+
+stack.printStack()
+

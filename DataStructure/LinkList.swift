@@ -40,7 +40,6 @@ struct LinkList<T> {
                 temp = node.next
             }
         }
-        
     }
     
     // Logic to reverse linked list
@@ -86,9 +85,6 @@ struct LinkList<T> {
         length -= 1;
     }
     
-    // 
-    
-    
 }
 
 
@@ -99,5 +95,4 @@ class Node<T> : NSObject {
     init(data:T) {
         self.data = data
     }
-    
 }
