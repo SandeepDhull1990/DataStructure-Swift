@@ -93,3 +93,13 @@ stack.push(data: "Sigma End")
 
 stack.printStack()
 
+print("\n");
+
+print("Dequeued element is \(stack.pop()!)\n");
+
+print("Peeked element is \(stack.peek()!)\n");
+
+print("Dequeued element is \(stack.pop()!)b");
+
+stack.printStack()
+
